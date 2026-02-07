@@ -1,0 +1,30 @@
+
+<div class="login-container">
+  <form class="login-card" (ngSubmit)="login()">
+    <h2>Circle AM Login</h2>
+
+    <div class="form-group">
+      <label>Username</label>
+      <input
+        type="text"
+        [(ngModel)]="circle_AM"
+        name="circle_AM"
+        placeholder="Enter username"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input
+        type="password"
+        [(ngModel)]="amPassword"
+        name="amPassword"
+        placeholder="Enter password"
+        required
+      />
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+</div>

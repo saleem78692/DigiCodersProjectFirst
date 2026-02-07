@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+	--bg-1: #0f172a;
+	--bg-2: #071043;
+	--card: #ffffff;
+	--muted: #6b7280;
+	--accent: #6c5ce7;
+	--accent-2: #00d4ff;
+	--success: #10b981;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{
+	margin:0;
+	font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+	color: #0b1220;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+.app-container{
+	min-height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:2rem;
+}
+
+.muted{color:var(--muted)}
+
+/* small utilities */
+.center{text-align:center}
+.row{display:flex;gap:1rem}
+

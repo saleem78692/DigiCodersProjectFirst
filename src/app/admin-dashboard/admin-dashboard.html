@@ -1,0 +1,148 @@
+<div class="admin-container">
+  <!-- Header -->
+  <header class="admin-header">
+    <div class="header-content">
+      <h1 class="admin-title">Admin Dashboard</h1>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search..." class="search-input">
+          <span class="search-icon">🔍</span>
+        </div>
+        <button class="btn-notification">🔔</button>
+        <button class="btn-profile">👤</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="admin-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <div class="nav-item active" (click)="setActive('dashboard')">
+          <span class="nav-icon">📊</span>
+          <span class="nav-label">Dashboard</span>
+        </div>
+        <a routerLink="/AllUsers"  class="nav-item nav-link" (click)="setActive('users')">
+          <span class="nav-icon">👥</span>
+          <a routerLink="/AllUsers" style="color: white; text-decoration: none; font-weight: bold;" class="nav-label">Users</a>
+        </a>
+        <div class="nav-item" (click)="setActive('messages')">
+          <span class="nav-icon">💬</span>
+          <span class="nav-label">Messages</span>
+        </div>
+        <div class="nav-item" (click)="setActive('settings')">
+          <span class="nav-icon">⚙️</span>
+          <span class="nav-label">Settings</span>
+        </div>
+        <div class="nav-item" (click)="setActive('reports')">
+          <span class="nav-icon">📈</span>
+          <span class="nav-label">Reports</span>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="content">
+      <!-- Stats Cards -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <h3>Total Users</h3>
+            <span class="stat-icon">👥</span>
+          </div>
+          <p class="stat-value">1,234</p>
+          <p class="stat-change positive">+12% from last month</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <h3>Total Messages</h3>
+            <span class="stat-icon">💬</span>
+          </div>
+          <p class="stat-value">5,678</p>
+          <p class="stat-change positive">+8% from last month</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <h3>Active Sessions</h3>
+            <span class="stat-icon">🔗</span>
+          </div>
+          <p class="stat-value">423</p>
+          <p class="stat-change negative">-3% from last month</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <h3>Revenue</h3>
+            <span class="stat-icon">💰</span>
+          </div>
+          <p class="stat-value">$45,290</p>
+          <p class="stat-change positive">+24% from last month</p>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts-section">
+        <div class="chart-card">
+          <h2>User Growth</h2>
+          <div class="chart-placeholder">
+            <p>📊 Chart visualization area</p>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <h2>Activity Overview</h2>
+          <div class="chart-placeholder">
+            <p>📈 Chart visualization area</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Activity Table -->
+      <section class="activity-section">
+        <div class="section-header">
+          <h2>Recent Activity</h2>
+          <button class="btn-link">View All →</button>
+        </div>
+        <table class="activity-table">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Action</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Login</td>
+              <td><span class="badge success">Active</span></td>
+              <td>Feb 4, 2026</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>Message Sent</td>
+              <td><span class="badge success">Completed</span></td>
+              <td>Feb 3, 2026</td>
+            </tr>
+            <tr>
+              <td>Mike Johnson</td>
+              <td>Profile Update</td>
+              <td><span class="badge warning">Pending</span></td>
+              <td>Feb 2, 2026</td>
+            </tr>
+            <tr>
+              <td>Sarah Williams</td>
+              <td>Account Deleted</td>
+              <td><span class="badge error">Failed</span></td>
+              <td>Feb 1, 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</div>

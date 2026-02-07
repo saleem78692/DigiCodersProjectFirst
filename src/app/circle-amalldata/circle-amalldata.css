@@ -1,0 +1,73 @@
+/* Circle AM All Data - UI styles (clean & attractive) */
+
+.ca-container {
+	padding: 1.5rem;
+	color: #e6eef8;
+	font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    background-color: rgb(138, 107, 107);
+}
+
+.ca-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.title-group { display:flex; align-items:center; gap:1rem; }
+.title { font-size:1.25rem; margin:0; font-weight:700; }
+.count-badge {
+	background: linear-gradient(90deg,#3b82f6,#06b6d4);
+	padding:0.35rem 0.65rem;
+	border-radius:999px;
+	font-weight:600;
+	color:white;
+	font-size:0.9rem;
+}
+
+.controls .search {
+	padding:0.5rem 0.75rem;
+	border-radius:8px;
+	border:1px solid rgba(255,255,255,0.06);
+	background: rgba(255,255,255,0.02);
+	color: #dbeafe;
+	min-width:220px;
+}
+
+.table-card {
+	background: rgba(23, 33, 54, 0.6);
+	border: 1px solid rgba(255,255,255,0.04);
+	border-radius:12px;
+	padding:0.75rem;
+}
+
+.data-table {
+	width:100%;
+	border-collapse: collapse;
+	overflow: auto;
+}
+.data-table thead th {
+	text-align:left;
+	padding:0.75rem 1rem;
+	font-size:0.85rem;
+	color:#cfe8ff;
+	background: rgba(255,255,255,0.02);
+	border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.data-table tbody td {
+	padding:0.85rem 1rem;
+	border-bottom: 1px dashed rgba(255,255,255,0.02);
+	color:#e6eef8;
+	font-size:0.95rem;
+}
+.data-table tbody tr:hover td { background: rgba(59,130,246,0.03); }
+
+.empty-state { text-align:center; padding:2.5rem 1rem; color:#a5b8d6; }
+.empty-illustration { font-size:2.25rem; margin-bottom:0.5rem; }
+
+@media (max-width:800px) {
+	.ca-header { flex-direction:column; align-items:flex-start; gap:0.5rem; }
+	.controls .search { width:100%; min-width:0; }
+}
+
